@@ -1,0 +1,19 @@
+body{
+    background-color: #1a242e;
+}
+
+#logo {
+    font-family: monospace;
+    font-weight: bold;
+
+    background: linear-gradient(
+        135deg,
+        #7dcfff,
+        #9effda,
+        #cba6f7
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
