@@ -2,40 +2,64 @@
 <html lang="en">
 <head>
   <title>Weathering, the weather forecast application.</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/comic-mono@0.0.1/index.css">
   <link rel="stylesheet" href="style/logo.css">
   <link rel="stylesheet" href="style/bars.css">
   <link rel="stylesheet" href="style/text.css">
+  <link rel="stylesheet" href="style/blocks.css">
   <meta charset="utf-8">
   <div class="__bar"><button class="button"></button></div>
+  <div class="logo">
     <pre id="logo"></pre>
     <script src="logo.js"></script>
     <pre class="text">A simple weather forecast</pre>
+  </div>
+    
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <div class="__bar">
-    <p class="text">Options</p><button class="tex__button" id="Options" style="filter: invert(89%) sepia(50%) saturate(1312%) hue-rotate(180deg) brightness(102%) contrast(101%);">⚙️</button>
+    <p class="text">Options</p>
+    <button style="filter: invert(93%) sepia(85%) saturate(2800%) hue-rotate(165deg) brightness(110%) contrast(100%);">⚙️</button>
   </div>
 </head>
 <body>
   <nav class="nav">
     <div id="pages" class="nav__pages">
-      <a class="button">CALENDAR</a>
+      <a class="button">smth</a>
       <a class="button">MAP</a>
       <a class="button">something</a>
     </div>
   </nav>
+  <div id="city__search" class="form__box">
+    <form class="form">
+      <input type="text" class="cityInput" placeholder="Enter city">
+      <button type="submit">Get Weather</button>
+    </form>
+  </div>
   <div id="top_info" class="window">
 
   </div>
-  <div id="week">
+  <div class="week">
     <div id="1" class="week__day">
       <h2 class="text">Today</h2>
-      <p class="text" id="degree">placeholder</p><p></p>
+      <p class="text" id="degree">0°C</p><p></p>
+      <p class="text" id="humidity">73%</p><p></p>
+      <p class="text" id="description">Nice and clear</p><p></p>
+      <p class="text" id="emoji">☁</p><p></p>
+    </div>
+    <div id="2" class="week__day">
+      <h2 class="text">Today</h2>
+      <p class="text" id="degree">0°C</p><p></p>
+      <p class="text" id="humidity">73%</p><p></p>
+      <p class="text" id="description">Nice and clear</p><p></p>
+      <p class="text" id="emoji">☁</p><p></p>
     </div>
   </div>
   <footer>
     <div></div>
-    <div id="return"><</div>
+    <div id="return">
+      <button class="button">Return to top</button>
+    </div>
   </footer>
 </body>
 </html>

@@ -1,5 +1,6 @@
 .text {
-    font-family: monospace;
+
+    font-family: "Comic Mono", monospace;
     font-weight: bold;
 
     background: #abe0ff;
@@ -7,4 +8,15 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+.button{
+    font-family: "Comic Mono", monospace;
+
+    font-weight: bold;
+    color: #abe0ff;
+}
+
+.button:hover{
+    background-color: #426c8c;
 }
