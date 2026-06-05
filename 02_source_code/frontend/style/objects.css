@@ -1,0 +1,26 @@
+.cityInput {
+    border: 2px solid #7dcfff;
+    border-radius: 5px;
+    background: none;
+    color: #d4efff;
+    padding: 5px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-left: -70px;
+}
+
+.form button {
+    background-color: #2b455e;
+    border: 1px solid #7dcfff;
+    border-radius: 7px;
+    color: #d4efff;
+    padding: 10px 30px;
+    margin-right: -70px;
+    font-size: 24px;
+}
+
+.form button:hover {
+    cursor: pointer;
+    background-color: #426c8c;
+}

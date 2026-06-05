@@ -1,28 +1,28 @@
-.__bar{
+.__bar {
     background: #2b455e;
-    position:relative;
+    position: relative;
     display: flex;
     flex-direction: row;
-    align-items:center;
-    margin-bottom: 30px;
+    align-items: center;
+    margin-bottom: 60px;
     width: 100%;
 }
 
-.__bar button{
+.__bar button {
     background: none;
     border: none;
     margin: 10px;
     font-size: 2rem;
     margin-right: 100px;
-    position:absolute;
+    position: absolute;
     left: 50%;
     transform: translate(-50%);
 }
 
-.__bar p{
+.__bar p {
     margin-left: 20px;
 }
 
-.__bar button:hover{
+.__bar button:hover {
     cursor: pointer;
 }
