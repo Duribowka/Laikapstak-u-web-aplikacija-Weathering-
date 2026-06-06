@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #1a242e;
     font-family: "Comic Mono", monospace;
 
@@ -8,30 +8,47 @@ body{
     align-items: center;
 }
 
-#logo {
+body.light {
+    background-color: #b5e5ff;
+    font-family: "Comic Mono", monospace;
 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
     font-weight: bold;
 
-    background: linear-gradient(
-        135deg,
-        #7dcfff,
-        #9effda,
-        #cba6f7
-    );
+    background: linear-gradient(135deg, #7dcfff, #9effda, #cba6f7);
 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    letter-spacing: -1px;
+    line-height: 1.17;
+}
+#logo.light {
+    font-weight: bold;
+
+    background: linear-gradient(135deg, #1378d1, #1e66a6, #164a78);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: -1px;
+    line-height: 1.17;
 }
 
-.logo{
-    display:flex;
+.logo {
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
     margin-top: 20px;
 }
 
-.logo pre{
+.logo pre {
     margin: 3px;
 }

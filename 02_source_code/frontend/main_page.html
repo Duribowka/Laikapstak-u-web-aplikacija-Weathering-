@@ -23,13 +23,9 @@
 
         <div class="__bar">
             <p class="text">Options</p>
-            <button
-                style="
-                    filter: invert(93%) sepia(85%) saturate(2800%)
-                        hue-rotate(165deg) brightness(110%) contrast(100%);
-                "
-            >
-                ⚙️
+            <button class="emoji">⚙️</button>
+            <button id="theme" class="theme__emoji">
+                <script src="theme.js"></script>
             </button>
         </div>
     </head>
@@ -73,9 +69,14 @@
             </div>
         </div>
         <footer>
-            <div></div>
-            <div id="return">
-                <button class="button">Return to top</button>
+            <div class="footer__items">
+                <div></div>
+                <div id="return" class="footer_item">
+                    <button class="button">Return to top</button>
+                </div>
+                <div class="hyperlink__block">
+                    <p class="text">Made possible with </p><a class="hyperlink" href="https://openweathermap.org/api/one-call-4?collection=one_call_api">openweathermap.org/a>
+                </div>
             </div>
         </footer>
     </body>

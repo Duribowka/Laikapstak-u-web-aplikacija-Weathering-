@@ -1,5 +1,4 @@
 .text {
-
     font-family: "Comic Mono", monospace;
     font-weight: bold;
 
@@ -10,13 +9,51 @@
     color: transparent;
 }
 
-.button{
+.text.light {
+    font-family: "Comic Mono", monospace;
+    font-weight: bold;
+
+    background: #2b455e;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.button {
     font-family: "Comic Mono", monospace;
 
     font-weight: bold;
     color: #abe0ff;
 }
 
-.button:hover{
-    background-color: #426c8c;
+.button.light {
+    font-family: "Comic Mono", monospace;
+
+    font-weight: bold;
+    color: #2b455e;
+}
+
+.theme__emoji p {
+    color: transparent;
+    text-shadow: 0 0 0 #7dcfff;
+}
+
+.theme__emoji p.light {
+    color: transparent;
+    text-shadow: 0 0 0 #286b75;
+}
+
+.emoji {
+    color: transparent;
+    text-shadow: 0 0 0 #7dcfff;
+}
+
+.emoji.light {
+    color: transparent;
+    text-shadow: 0 0 0 #286b75;
+}
+
+.hyperlink__block {
+    display: flex;
 }

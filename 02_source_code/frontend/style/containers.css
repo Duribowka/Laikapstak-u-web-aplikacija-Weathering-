@@ -14,6 +14,16 @@
     align-items: center;
 }
 
+.week__day.light {
+    margin: 20px 10px;
+    padding: 10px 30px;
+    border: 3px solid #2b455e;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .week__day p {
     margin: 3px;
 }
@@ -26,8 +36,20 @@
     cursor: pointer;
 }
 
+.button.light {
+    border: none;
+    border-radius: 5px;
+    background-color: #3c96b5;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
 .button:hover {
     background-color: #426c8c;
+}
+
+.button:hover.light {
+    background-color: #6fcded;
 }
 
 .nav {

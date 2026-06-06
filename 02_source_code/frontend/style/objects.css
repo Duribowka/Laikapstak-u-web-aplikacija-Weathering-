@@ -9,6 +9,17 @@
     font-size: 18px;
     margin-left: -70px;
 }
+.cityInput.light {
+    border: 2px solid #2b455e;
+    border-radius: 5px;
+    background: none;
+    color: #45616e;
+    padding: 5px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-left: -70px;
+}
 
 .form button {
     background-color: #2b455e;
@@ -23,4 +34,19 @@
 .form button:hover {
     cursor: pointer;
     background-color: #426c8c;
+}
+
+.form button.light {
+    background-color: #3c96b5;
+    border: 1px solid #2b455e;
+    border-radius: 7px;
+    color: #2b455e;
+    padding: 10px 30px;
+    margin-right: -70px;
+    font-size: 24px;
+}
+
+.form button:hover.light {
+    cursor: pointer;
+    background-color: #6fcded;
 }
