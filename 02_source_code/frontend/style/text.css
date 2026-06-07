@@ -70,32 +70,44 @@
     color: transparent;
 }
 .cityDisplay {
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: #abe0ff;
-    margin-bottom: 0px;
+    margin: 0;
 }
+
 .tempDisplay {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #abe0ff;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 .descDisplay {
     font-style: italic;
-    font-size: 2rem;
+    font-size: 0.95rem;
     color: #abe0ff;
+    opacity: 0.8;
+    margin: 2px 0;
 }
 
 .weatherEmoji {
-    margin: 0px;
-    font-size: 5rem;
+    margin: 0;
+    font-size: 3.5rem;
+    color: transparent;
+    text-shadow: 0 0 0 #7dcfff;
 }
 
 .errorDisplay {
     font-size: 16px;
     color: #abe0ff;
 }
-.humidityDisplay {
-    font-size: 18px;
+.humidityDisplay,
+.visibilityDisplay,
+.feelsLikeDisplay,
+.pressureDisplay,
+.windSpeedDisplay,
+.windDirectionDisplay,
+.timeDisplay {
+    font-size: 0.9rem;
     color: #abe0ff;
+    margin: 2px 0;
 }
