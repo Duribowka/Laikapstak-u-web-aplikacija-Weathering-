@@ -56,4 +56,46 @@
 
 .hyperlink__block {
     display: flex;
+    flex-direction: row;
+}
+
+.hyperlink {
+    font-family: "Comic Mono", monospace;
+    font-weight: bold;
+
+    background: #abe0ff;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.cityDisplay {
+    font-size: 3.5rem;
+    color: #abe0ff;
+    margin-bottom: 0px;
+}
+.tempDisplay {
+    font-size: 3rem;
+    color: #abe0ff;
+    margin-bottom: 10px;
+}
+
+.descDisplay {
+    font-style: italic;
+    font-size: 2rem;
+    color: #abe0ff;
+}
+
+.weatherEmoji {
+    margin: 0px;
+    font-size: 5rem;
+}
+
+.errorDisplay {
+    font-size: 16px;
+    color: #abe0ff;
+}
+.humidityDisplay {
+    font-size: 18px;
+    color: #abe0ff;
 }

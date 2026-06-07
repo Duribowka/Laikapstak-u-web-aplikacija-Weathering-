@@ -55,3 +55,8 @@
 .nav {
     margin-bottom: 60px;
 }
+
+.footer__items {
+    display: flex;
+    flex-direction: column;
+}

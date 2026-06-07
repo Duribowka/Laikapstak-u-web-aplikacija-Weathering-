@@ -22,7 +22,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <div class="__bar">
-            <p class="text">Options</p>
             <button class="emoji">⚙️</button>
             <button id="theme" class="theme__emoji">
                 <script src="theme.js"></script>
@@ -43,9 +42,12 @@
                 <button type="submit">Get Weather</button>
             </form>
         </div>
+        <div class="card" style="display: none">
+            <script src="today's_weather.js"></script>
+        </div>
         <div id="top_info" class="window"></div>
         <div class="week">
-            <div id="1" class="week__day">
+            <div id="1" class="week__day" style="display: none">
                 <h2 class="text">Today</h2>
                 <p class="text" id="degree">0°C</p>
                 <p></p>
@@ -56,7 +58,7 @@
                 <p class="text" id="emoji">☁</p>
                 <p></p>
             </div>
-            <div id="2" class="week__day">
+            <div id="2" class="week__day" style="display: none">
                 <h2 class="text">Today</h2>
                 <p class="text" id="degree">0°C</p>
                 <p></p>
@@ -71,11 +73,16 @@
         <footer>
             <div class="footer__items">
                 <div></div>
-                <div id="return" class="footer_item">
+                <div id="return" class="footer__item">
                     <button class="button">Return to top</button>
                 </div>
                 <div class="hyperlink__block">
-                    <p class="text">Made possible with </p><a class="hyperlink" href="https://openweathermap.org/api/one-call-4?collection=one_call_api">openweathermap.org/a>
+                    <p class="text">Made possible with</p>
+                    <a
+                        class="hyperlink"
+                        href="https://openweathermap.org/api/one-call-4?collection=one_call_api"
+                        >openweathermap.org</a
+                    >
                 </div>
             </div>
         </footer>
