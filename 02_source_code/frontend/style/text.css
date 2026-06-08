@@ -13,7 +13,7 @@
     font-family: "Comic Mono", monospace;
     font-weight: bold;
 
-    background: #2b455e;
+    background: #171717;
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -31,7 +31,7 @@
     font-family: "Comic Mono", monospace;
 
     font-weight: bold;
-    color: #2b455e;
+    color: #171717;
 }
 
 .theme__emoji p {
@@ -41,7 +41,7 @@
 
 .theme__emoji p.light {
     color: transparent;
-    text-shadow: 0 0 0 #286b75;
+    text-shadow: 0 0 0 #c26c21;
 }
 
 .emoji {
@@ -51,7 +51,7 @@
 
 .emoji.light {
     color: transparent;
-    text-shadow: 0 0 0 #286b75;
+    text-shadow: 0 0 0 #c26c21;
 }
 
 .hyperlink__block {
@@ -64,6 +64,16 @@
     font-weight: bold;
 
     background: #abe0ff;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.hyperlink.light {
+    font-family: "Comic Mono", monospace;
+    font-weight: bold;
+
+    background: #171717;
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -109,5 +119,47 @@
 .timeDisplay {
     font-size: 0.9rem;
     color: #abe0ff;
+    margin: 2px 0;
+}
+.cityDisplay.light {
+    font-size: 2rem;
+    color: #171717;
+    margin: 0;
+}
+
+.tempDisplay.light {
+    font-size: 2.5rem;
+    color: #171717;
+    margin: 0;
+}
+
+.descDisplay.light {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #171717;
+    opacity: 0.8;
+    margin: 2px 0;
+}
+
+.weatherEmoji.light {
+    margin: 0;
+    font-size: 3.5rem;
+    color: transparent;
+    text-shadow: 0 0 0 #171717;
+}
+
+.errorDisplay.light {
+    font-size: 16px;
+    color: #171717;
+}
+.humidityDisplay.light,
+.visibilityDisplay.light,
+.feelsLikeDisplay.light,
+.pressureDisplay.light,
+.windSpeedDisplay.light,
+.windDirectionDisplay.light,
+.timeDisplay.light {
+    font-size: 0.9rem;
+    color: #171717;
     margin: 2px 0;
 }

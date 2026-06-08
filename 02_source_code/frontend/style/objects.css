@@ -10,10 +10,10 @@
     margin-left: -70px;
 }
 .cityInput.light {
-    border: 2px solid #2b455e;
+    border: 2px solid #302818;
     border-radius: 5px;
     background: none;
-    color: #45616e;
+    color: #2b2b2b;
     padding: 5px;
     padding-right: 30px;
     margin-bottom: 10px;
@@ -37,8 +37,8 @@
 }
 
 .form button.light {
-    background-color: #3c96b5;
-    border: 1px solid #2b455e;
+    background-color: #dead4b;
+    border: 1px solid #302818;
     border-radius: 7px;
     color: #2b455e;
     padding: 10px 30px;
@@ -48,7 +48,7 @@
 
 .form button:hover.light {
     cursor: pointer;
-    background-color: #6fcded;
+    background-color: #f5c567;
 }
 
 .card {
@@ -80,6 +80,39 @@
     z-index: 0;
 }
 .card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.card.light {
+    width: 450px;
+    max-width: 90vw;
+
+    padding: 16px 20px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 3px solid #302818;
+    border-radius: 10px;
+
+    background-image: url("images/none.png");
+
+    position: relative;
+    overflow: hidden;
+}
+.card.light::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(255, 255, 242, 0.55);
+
+    z-index: 0;
+}
+.card.light > * {
     position: relative;
     z-index: 1;
 }

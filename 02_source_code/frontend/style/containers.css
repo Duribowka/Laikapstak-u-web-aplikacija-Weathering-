@@ -17,7 +17,7 @@
 .week__day.light {
     margin: 20px 10px;
     padding: 10px 30px;
-    border: 3px solid #2b455e;
+    border: 3px solid #302818;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@
 .button.light {
     border: none;
     border-radius: 5px;
-    background-color: #3c96b5;
+    background-color: #dead4b;
     padding: 10px 30px;
     cursor: pointer;
 }
@@ -49,7 +49,7 @@
 }
 
 .button:hover.light {
-    background-color: #6fcded;
+    background-color: #f5c567;
 }
 
 .nav {

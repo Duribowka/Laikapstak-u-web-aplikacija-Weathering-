@@ -9,7 +9,7 @@ body {
 }
 
 body.light {
-    background-color: #b5e5ff;
+    background-color: #fffbeb;
     font-family: "Comic Mono", monospace;
 
     margin: 0;
@@ -32,7 +32,7 @@ body.light {
 #logo.light {
     font-weight: bold;
 
-    background: linear-gradient(135deg, #1378d1, #1e66a6, #164a78);
+    background: linear-gradient(135deg, #ebc650, #d4924c, #c26c21);
 
     -webkit-background-clip: text;
     background-clip: text;
