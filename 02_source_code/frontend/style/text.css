@@ -44,6 +44,16 @@
     text-shadow: 0 0 0 #c26c21;
 }
 
+.temp__emoji p {
+    color: transparent;
+    text-shadow: 0 0 0 #7dcfff;
+}
+
+.temp__emoji p.light {
+    color: transparent;
+    text-shadow: 0 0 0 #c26c21;
+}
+
 .emoji {
     color: transparent;
     text-shadow: 0 0 0 #7dcfff;

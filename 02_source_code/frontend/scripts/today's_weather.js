@@ -2,7 +2,6 @@ const apiKey = "211c8ca44c06752de485af185bd8adad";
 const weatherForm = document.querySelector(".form");
 const cityInput = document.querySelector(".cityInput");
 const card = document.querySelector(".card");
-degree = "°C";
 
 weatherForm.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -36,7 +35,8 @@ async function getWeatherData(city) {
 
 function displayWeatherInfo(data) {
   const {
-    name: city, timezone,
+    name: city,
+    timezone,
     main: { temp, humidity, feels_like, pressure },
     wind: { speed, deg },
     visibility,
@@ -62,19 +62,31 @@ function displayWeatherInfo(data) {
   const timeDisplay = document.createElement("p");
 
   cityDisplay.textContent = city;
-  tempDisplay.textContent = `${(temp - 273.15).toFixed(2)}${degree}`;
+  if (cycle == 0) {
+    tempDisplay.textContent = `${temp}K`;
+  } else if (cycle == 1) {
+    tempDisplay.textContent = `${((temp - 273.15) * (9 / 5) + 32).toFixed(2)}°F`;
+  } else {
+    tempDisplay.textContent = `${(temp - 273.15).toFixed(2)}°C`;
+  }
+
   humidityDisplay.textContent = `Humidity: ${humidity}%`;
   descDisplay.textContent = description;
   weatherEmoji.textContent = getWeatherEmoji(id);
-  feelslikeDisplay.textContent = `Feels like: ${(feels_like - 273.15).toFixed(0)}${degree}`;
+  if (cycle == 0) {
+    feelslikeDisplay.textContent = `Feels like: ${feels_like}K`;
+  } else if (cycle == 1) {
+    feelslikeDisplay.textContent = `Feels like: ${((feels_like - 273.15) * (9 / 5) + 32).toFixed(2)}°F`;
+  } else {
+    feelslikeDisplay.textContent = `Feels like: ${(feels_like - 273.15).toFixed(2)}°C`;
+  }
   pressureDisplay.textContent = `Pressure: ${pressure} hPa`;
   windspeedDisplay.textContent = `Wind: ${speed} m/s`;
   winddirectionDispay.textContent = `Wind direction: ${deg}°`;
   visibilityDisplay.textContent = `Visibility: ${(visibility / 1000).toFixed(1)} km`;
   setInterval(() => {
-  timeDisplay.textContent =
-    `Local Time: ${getCityTime(timezone)}`;
-}, 1000);
+    timeDisplay.textContent = `Local Time: ${getCityTime(timezone)}`;
+  }, 1000);
 
   header.classList.add("weatherHeader");
   main.classList.add("weatherMain");
@@ -93,22 +105,22 @@ function displayWeatherInfo(data) {
   timeDisplay.classList.add("timeDisplay");
 
   header.appendChild(cityDisplay);
-header.appendChild(weatherEmoji);
+  header.appendChild(weatherEmoji);
 
-main.appendChild(tempDisplay);
-main.appendChild(feelslikeDisplay);
-main.appendChild(descDisplay);
+  main.appendChild(tempDisplay);
+  main.appendChild(feelslikeDisplay);
+  main.appendChild(descDisplay);
 
-stats.appendChild(humidityDisplay);
-stats.appendChild(windspeedDisplay);
-stats.appendChild(winddirectionDispay);
-stats.appendChild(pressureDisplay);
-stats.appendChild(visibilityDisplay);
-stats.appendChild(timeDisplay);
+  stats.appendChild(humidityDisplay);
+  stats.appendChild(windspeedDisplay);
+  stats.appendChild(winddirectionDispay);
+  stats.appendChild(pressureDisplay);
+  stats.appendChild(visibilityDisplay);
+  stats.appendChild(timeDisplay);
 
-card.appendChild(header);
-card.appendChild(main);
-card.appendChild(stats);
+  card.appendChild(header);
+  card.appendChild(main);
+  card.appendChild(stats);
 }
 
 function getWeatherEmoji(weatherId) {
@@ -150,7 +162,7 @@ function displayError(message) {
   card.appendChild(errorDisplay);
 }
 
-function getCityTime(timezone){
+function getCityTime(timezone) {
   const now = new Date();
 
   const utc = now.getTime() + now.getTimezoneOffset() * 60000;
