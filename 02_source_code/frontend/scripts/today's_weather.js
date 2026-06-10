@@ -109,6 +109,22 @@ function displayWeatherInfo(data) {
   visibilityDisplay.classList.add("visibilityDisplay");
   timeDisplay.classList.add("timeDisplay");
 
+  if (document.body.classList.contains("light")) {
+    card.classList.add("light");
+
+    cityDisplay.classList.add("light");
+    tempDisplay.classList.add("light");
+    humidityDisplay.classList.add("light");
+    descDisplay.classList.add("light");
+    weatherEmoji.classList.add("light");
+    feelslikeDisplay.classList.add("light");
+    pressureDisplay.classList.add("light");
+    windspeedDisplay.classList.add("light");
+    winddirectionDispay.classList.add("light");
+    visibilityDisplay.classList.add("light");
+    timeDisplay.classList.add("light");
+}
+
   header.appendChild(cityDisplay);
   header.appendChild(weatherEmoji);
 

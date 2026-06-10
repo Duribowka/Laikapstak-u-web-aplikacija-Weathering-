@@ -88,4 +88,16 @@ theme.addEventListener("click", () => {
   document.querySelectorAll(".hyperlink").forEach((element) => {
     element.classList.toggle("light");
   });
+  document.querySelectorAll(".forecastCard").forEach((element) => {
+    element.classList.toggle("light");
+  });
+  document.querySelectorAll(".forecastDate").forEach((element) => {
+    element.classList.toggle("light");
+  });
+  document.querySelectorAll(".forecastEmoji").forEach((element) => {
+    element.classList.toggle("light");
+  });
+  document.querySelectorAll(".forecastTemp").forEach((element) => {
+    element.classList.toggle("light");
+  });
 });

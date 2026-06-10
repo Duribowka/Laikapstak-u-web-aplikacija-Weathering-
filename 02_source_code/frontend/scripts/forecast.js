@@ -52,6 +52,13 @@ function createForecastCard(date, forecasts) {
   emojiDisplay.classList.add("forecastEmoji");
   tempDisplay.classList.add("forecastTemp");
 
+  if (document.body.classList.contains("light")) {
+    card.classList.add("light");
+    dateDisplay.classList.add("light");
+    emojiDisplay.classList.add("light");
+    tempDisplay.classList.add("light");
+  }
+
   dateDisplay.textContent = new Date(date).toLocaleDateString(
     "en-GB",
     {
