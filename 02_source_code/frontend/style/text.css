@@ -173,3 +173,47 @@
     color: #171717;
     margin: 2px 0;
 }
+
+.forecastDate {
+    margin: 0 0 10px 0;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    color: #abe0ff;
+
+    text-align: center;
+}
+
+.forecastEmoji {
+    margin: 0;
+
+    font-size: 2.5rem;
+
+    color: transparent;
+    text-shadow: 0 0 0 #7dcfff;
+}
+
+.forecastTemp {
+    margin-top: 10px;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    color: #abe0ff;
+
+    text-align: center;
+}
+
+.forecastDate.light {
+    color: #171717;
+}
+
+.forecastEmoji.light {
+    color: transparent;
+    text-shadow: 0 0 0 #c26c21;
+}
+
+.forecastTemp.light {
+    color: #171717;
+}

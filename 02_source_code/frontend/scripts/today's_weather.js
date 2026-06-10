@@ -2,6 +2,7 @@ const apiKey = "211c8ca44c06752de485af185bd8adad";
 const weatherForm = document.querySelector(".form");
 const cityInput = document.querySelector(".cityInput");
 const card = document.querySelector(".card");
+let clockInterval;
 
 weatherForm.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -12,6 +13,7 @@ weatherForm.addEventListener("submit", async (event) => {
     try {
       const weatherData = await getWeatherData(city);
       displayWeatherInfo(weatherData);
+      displayForecast(city);
     } catch (error) {
       console.error(error);
       displayError(error);
@@ -84,7 +86,10 @@ function displayWeatherInfo(data) {
   windspeedDisplay.textContent = `Wind: ${speed} m/s`;
   winddirectionDispay.textContent = `Wind direction: ${deg}°`;
   visibilityDisplay.textContent = `Visibility: ${(visibility / 1000).toFixed(1)} km`;
-  setInterval(() => {
+
+  clearInterval(clockInterval);
+  timeDisplay.textContent = `Local Time: ${getCityTime(timezone)}`;
+  clockInterval = setInterval(() => {
     timeDisplay.textContent = `Local Time: ${getCityTime(timezone)}`;
   }, 1000);
 

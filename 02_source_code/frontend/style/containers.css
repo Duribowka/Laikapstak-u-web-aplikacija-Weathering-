@@ -80,3 +80,55 @@
     border-top: 1px solid rgba(125, 207, 255, 0.25);
     padding-top: 10px;
 }
+
+.forecastContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+    width: 100%;
+    max-width: 900px;
+
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.forecastCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 120px;
+    padding: 15px;
+
+    border-radius: 16px;
+
+    background: rgba(125, 207, 255, 0.08);
+    border: 1px solid rgba(125, 207, 255, 0.2);
+
+    backdrop-filter: blur(8px);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.forecastCard:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 12px rgba(125, 207, 255, 0.15);
+}
+
+.forecastCard.light {
+    background: rgba(194, 108, 33, 0.05);
+
+    border: 1px solid rgba(194, 108, 33, 0.15);
+}
+
+.forecastCard.light:hover {
+    box-shadow:
+        0 0 12px rgba(194, 108, 33, 0.15);
+}
