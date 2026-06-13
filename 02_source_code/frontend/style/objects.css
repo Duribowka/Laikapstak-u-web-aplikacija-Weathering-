@@ -116,3 +116,25 @@
     position: relative;
     z-index: 1;
 }
+
+.sign{
+    text-decoration: none;
+    color: #abe0ff;
+    background-color: #2b455e;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 7px 12px;
+}
+
+.sign:hover{
+    background-color: #426c8c;
+    cursor: pointer;
+}
+
+.signs{
+    display: flex;
+    position: absolute;
+    margin-left: 525px;
+    align-items: center;
+    transform: translatey(1.5px);
+}

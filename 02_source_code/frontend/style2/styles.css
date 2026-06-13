@@ -1,0 +1,81 @@
+body {
+    background-color: #1a242e;
+    font-family: "Comic Mono", monospace;
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.5rem;
+    color: #7dcfff;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    color: #abe0ff;
+}
+
+.text__input{
+    background: none;
+    border-color: #7dcfff;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px 30px;
+    color: #abe0ff;
+}
+
+.logo h1{
+    margin-bottom: -5px;
+    font-weight: bold;
+
+    background: linear-gradient(135deg, #7dcfff, #9effda, #cba6f7);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.form button{
+    border: none;
+    border-radius: 7px;
+    background-color: #2b455e;
+    color: #abe0ff;
+    padding: 10px 10px;
+    margin: 30px;
+}
+
+.form button:hover{
+    cursor: pointer;
+    background-color: #426c8c;
+}
+
+.form__box{
+    border: 3px solid #7dcfff;
+    border-radius: 3px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.return{
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #2b455e;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #abe0ff;
+}
+
+.return:hover{
+    background-color: #426c8c;
+    cursor: pointer;
+}
