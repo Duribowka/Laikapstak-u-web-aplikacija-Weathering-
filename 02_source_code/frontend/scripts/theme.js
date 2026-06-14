@@ -32,9 +32,6 @@ theme.addEventListener("click", () => {
   document.querySelectorAll(".temp__emoji p").forEach((element) => {
     element.classList.toggle("light");
   });
-  document.querySelectorAll(".__bar").forEach((element) => {
-    element.classList.toggle("light");
-  });
   document.querySelectorAll(".theme__emoji p").forEach((element) => {
     element.classList.toggle("light");
   });
