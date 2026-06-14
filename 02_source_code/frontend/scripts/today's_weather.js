@@ -14,6 +14,8 @@ weatherForm.addEventListener("submit", async (event) => {
       const weatherData = await getWeatherData(city);
       displayWeatherInfo(weatherData);
       displayForecast(city);
+
+      saveSearch(weatherData);
     } catch (error) {
       console.error(error);
       displayError(error);
@@ -190,4 +192,25 @@ function getCityTime(timezone) {
   const cityTime = new Date(utc + timezone * 1000);
 
   return cityTime.toLocaleTimeString("en-GB");
+}
+
+async function saveSearch(data) {
+
+  await fetch(
+    "http://localhost:5000/search",
+    {
+      method: "POST",
+
+      headers: {
+        "Content-Type": "application/json"
+      },
+
+      body: JSON.stringify({
+        city: data.name,
+        temperature: data.main.temp,
+        description: data.weather[0].description
+      })
+    }
+  );
+
 }
