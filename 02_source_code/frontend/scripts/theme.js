@@ -29,6 +29,9 @@ theme.addEventListener("click", () => {
   document.querySelectorAll(".theme__emoji").forEach((element) => {
     element.classList.toggle("light");
   });
+  document.querySelectorAll(".temp__emoji p").forEach((element) => {
+    element.classList.toggle("light");
+  });
   document.querySelectorAll(".__bar").forEach((element) => {
     element.classList.toggle("light");
   });
@@ -98,6 +101,12 @@ theme.addEventListener("click", () => {
     element.classList.toggle("light");
   });
   document.querySelectorAll(".forecastTemp").forEach((element) => {
+    element.classList.toggle("light");
+  });
+  document.querySelectorAll(".sign").forEach((element) => {
+    element.classList.toggle("light");
+  });
+  document.querySelectorAll(".sign:hover").forEach((element) => {
     element.classList.toggle("light");
   });
 });

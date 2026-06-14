@@ -59,6 +59,7 @@
 .footer__items {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .weatherHeader {
@@ -131,4 +132,10 @@
 .forecastCard.light:hover {
     box-shadow:
         0 0 12px rgba(194, 108, 33, 0.15);
+}
+
+.hyperlink__block{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
 }

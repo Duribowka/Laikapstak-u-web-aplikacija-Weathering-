@@ -131,10 +131,16 @@
     cursor: pointer;
 }
 
-.signs{
-    display: flex;
-    position: absolute;
-    margin-left: 525px;
-    align-items: center;
-    transform: translatey(1.5px);
+.sign.light{
+    text-decoration: none;
+    color: #171717;
+    background-color: #dead4b;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 7px 12px;
+}
+
+.sign:hover.light{
+    background-color: #f5c567;
+    cursor: pointer;
 }

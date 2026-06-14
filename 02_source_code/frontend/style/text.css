@@ -73,21 +73,27 @@
     font-family: "Comic Mono", monospace;
     font-weight: bold;
 
-    background: #abe0ff;
+    text-decoration: none;
+
+    background: #7dcfff;
 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    margin-left: 10px;
 }
 .hyperlink.light {
     font-family: "Comic Mono", monospace;
     font-weight: bold;
+
+    text-decoration: none;
 
     background: #171717;
 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
 }
 .cityDisplay {
     font-size: 2rem;

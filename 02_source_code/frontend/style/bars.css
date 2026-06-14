@@ -17,6 +17,17 @@
     width: 100%;
 }
 
+.signs{
+    display: flex;
+    position: absolute;
+    margin-left: 525px;
+    align-items: center;
+    transform: translatey(1.5px);
+    margin: 10px;
+    left: 50%;
+    transform: translate(-125%);
+}
+
 .emoji {
     background: none;
     border: none;
