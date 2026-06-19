@@ -1,4 +1,3 @@
-const apiKey = "211c8ca44c06752de485af185bd8adad";
 const weatherForm = document.querySelector(".form");
 const cityInput = document.querySelector(".cityInput");
 const card = document.querySelector(".card");
@@ -210,6 +209,4 @@ async function saveSearch(data) {
       })
     }
   );
-
-  console.log(await response.text());
 }

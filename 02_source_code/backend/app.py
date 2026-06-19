@@ -17,8 +17,7 @@ def recent_searches():
         """
         SELECT city
         FROM searches
-        GROUP BY city
-        ORDER BY MAX(searched_at) DESC
+        ORDER BY searched_at DESC
         LIMIT 5
         """
     )
@@ -47,6 +46,14 @@ def save_search():
 
     cursor.execute(
         """
+        DELETE FROM searches
+        WHERE city = %s
+        """,
+        (city,)
+    )
+
+    cursor.execute(
+        """
         INSERT INTO searches
         (city, temperature, description)
         VALUES (%s, %s, %s)
@@ -55,6 +62,31 @@ def save_search():
     )
 
     connection.commit()
+
+    cursor.execute(
+    """
+    SELECT COUNT(*)
+    FROM searches
+    """
+)
+
+    count = cursor.fetchone()[0]
+
+    if count > 5:
+
+        cursor.execute(
+            """
+            DELETE FROM searches
+            WHERE id = (
+                SELECT id
+                FROM searches
+                ORDER BY searched_at ASC
+                LIMIT 1
+            )
+            """
+        )
+
+        connection.commit()
 
     return {"message": "saved"}
 

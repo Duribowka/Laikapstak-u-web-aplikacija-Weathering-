@@ -21,7 +21,11 @@
     margin-left: -70px;
 }
 
-.form button {
+.form{
+    position: relative;
+}
+
+.form__button {
     background-color: #2b455e;
     border: 1px solid #7dcfff;
     border-radius: 7px;
@@ -31,12 +35,12 @@
     font-size: 24px;
 }
 
-.form button:hover {
+.form__button:hover {
     cursor: pointer;
     background-color: #426c8c;
 }
 
-.form button.light {
+.form__button.light {
     background-color: #dead4b;
     border: 1px solid #302818;
     border-radius: 7px;
@@ -46,7 +50,7 @@
     font-size: 24px;
 }
 
-.form button:hover.light {
+.form__button:hover.light {
     cursor: pointer;
     background-color: #f5c567;
 }
@@ -142,5 +146,24 @@
 
 .sign:hover.light{
     background-color: #f5c567;
+    cursor: pointer;
+}
+
+.recent__searches{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    transform: translate(-70px, -10px);
+    width: 465px;
+}
+
+.recentsButton{
+    all: unset;
+    display: block;
+    background-color: white;
+    height: 30px;
+    width: 100%;
     cursor: pointer;
 }
