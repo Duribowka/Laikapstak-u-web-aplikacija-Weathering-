@@ -1,0 +1,152 @@
+.text,
+.button,
+.hyperlink,
+.sign {
+    font-family: "Comic Mono", monospace;
+    font-weight: bold;
+}
+
+.text {
+    background: #abe0ff;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.button {
+    color: #abe0ff;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #2b455e;
+
+    padding: 10px 30px;
+
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #426c8c;
+}
+
+.sign {
+    text-decoration: none;
+
+    color: #abe0ff;
+
+    background-color: #2b455e;
+
+    border-radius: 5px;
+
+    margin: 10px;
+    padding: 7px 12px;
+}
+
+.sign:hover {
+    background-color: #426c8c;
+}
+
+.hyperlink {
+    text-decoration: none;
+
+    background: #7dcfff;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    margin-left: 10px;
+}
+
+.cityInput {
+    border: 2px solid #7dcfff;
+    border-radius: 5px;
+
+    background: none;
+
+    color: #d4efff;
+
+    padding: 5px;
+    padding-right: 30px;
+
+    margin-left: -70px;
+    margin-bottom: 10px;
+
+    font-size: 18px;
+}
+
+.form__button {
+    background-color: #2b455e;
+
+    border: 1px solid #7dcfff;
+    border-radius: 7px;
+
+    color: #d4efff;
+
+    padding: 10px 30px;
+
+    margin-right: -70px;
+
+    font-size: 24px;
+}
+
+.form__button:hover {
+    background-color: #426c8c;
+    cursor: pointer;
+}
+
+.emoji,
+.theme__emoji,
+.temp__emoji {
+    background: none;
+    border: none;
+    margin: 10px;
+}
+
+.emoji {
+    font-size: 2rem;
+}
+
+.theme__emoji {
+    font-size: 2rem;
+}
+
+.temp__emoji {
+    font-size: 2.8rem;
+    color: #7dcfff;
+}
+
+.__bar button:hover {
+    cursor: pointer;
+}
+
+.recent__searches {
+    position: absolute;
+
+    z-index: 999;
+
+    transform: translate(-70px, -10px);
+
+    width: 465px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+}
+
+.recentsButton {
+    all: unset;
+
+    display: block;
+
+    width: 100%;
+    height: 30px;
+
+    background-color: white;
+
+    cursor: pointer;
+}

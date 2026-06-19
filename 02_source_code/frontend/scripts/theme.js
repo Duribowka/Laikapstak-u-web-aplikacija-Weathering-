@@ -29,10 +29,10 @@ theme.addEventListener("click", () => {
   document.querySelectorAll(".theme__emoji").forEach((element) => {
     element.classList.toggle("light");
   });
-  document.querySelectorAll(".temp__emoji p").forEach((element) => {
+  document.querySelectorAll(".temp__emoji").forEach((element) => {
     element.classList.toggle("light");
   });
-  document.querySelectorAll(".theme__emoji p").forEach((element) => {
+  document.querySelectorAll(".theme__emoji").forEach((element) => {
     element.classList.toggle("light");
   });
   document.querySelectorAll(".emoji").forEach((element) => {

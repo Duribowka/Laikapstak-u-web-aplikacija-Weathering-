@@ -1,0 +1,68 @@
+.cityInput.light {
+    border-color: #302818;
+    color: #2b2b2b;
+}
+
+.button.light,
+.sign.light {
+    color: #171717;
+    background-color: #dead4b;
+}
+
+.button:hover.light,
+.sign:hover.light {
+    background-color: #f5c567;
+}
+
+.form__button.light {
+    color: #171717;
+    background-color: #dead4b;
+    border-color: #302818;
+}
+
+.form__button:hover.light {
+    background-color: #f5c567;
+}
+
+.text.light,
+.hyperlink.light,
+.cityDisplay.light,
+.tempDisplay.light,
+.descDisplay.light,
+.errorDisplay.light,
+.humidityDisplay.light,
+.visibilityDisplay.light,
+.feelsLikeDisplay.light,
+.pressureDisplay.light,
+.windSpeedDisplay.light,
+.windDirectionDisplay.light,
+.timeDisplay.light,
+.forecastDate.light,
+.forecastTemp.light {
+    color: #171717;
+}
+
+.weatherEmoji.light {
+    text-shadow: 0 0 0 #171717;
+}
+
+.forecastEmoji.light {
+    text-shadow: 0 0 0 #c26c21;
+}
+
+.card.light {
+    border-color: #302818;
+}
+
+.card.light::before {
+    background: rgba(255, 255, 242, 0.55);
+}
+
+.forecastCard.light {
+    background: rgba(194, 108, 33, 0.05);
+    border-color: rgba(194, 108, 33, 0.15);
+}
+
+.temp__emoji.light{
+    color: #c26c21;
+}
