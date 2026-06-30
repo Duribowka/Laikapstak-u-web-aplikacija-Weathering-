@@ -69,3 +69,67 @@ def get_weather(city):
 
     connection.commit()
     return weather_data
+
+def get_forecast(city):
+
+    print("GET_FORECAST CALLED")
+
+    connection = get_connection()
+    cursor = connection.cursor()
+
+    cursor.execute(
+        """
+        SELECT forecast_json, updated_at
+        FROM forecast_cache
+        WHERE city = %s
+        """,
+        (city,)
+    )
+
+    row = cursor.fetchone()
+
+    if row:
+
+        forecast_json = row[0]
+        updated_at = row[1]
+
+        if datetime.now(UTC).replace(tzinfo=None) - updated_at < timedelta(seconds=30):
+
+            print("FORECAST CACHE HIT")
+
+            return forecast_json
+
+    print("FORECAST CACHE MISS")
+
+    api_url = (
+        f"https://api.openweathermap.org/data/2.5/forecast"
+        f"?q={city}"
+        f"&appid={API_KEY}"
+    )
+
+    response = requests.get(api_url)
+
+    forecast_data = response.json()
+
+    cursor.execute(
+        """
+        INSERT INTO forecast_cache
+        (city, forecast_json, updated_at)
+
+        VALUES
+        (%s, %s, CURRENT_TIMESTAMP)
+
+        ON CONFLICT(city)
+        DO UPDATE
+        SET
+            forecast_json = EXCLUDED.forecast_json,
+            updated_at = CURRENT_TIMESTAMP
+        """,
+        (
+            city,
+            json.dumps(forecast_data)
+        )
+    )
+
+    connection.commit()
+    return forecast_data

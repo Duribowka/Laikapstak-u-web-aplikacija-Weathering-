@@ -29,8 +29,8 @@ async function displayForecast(city) {
 }
 
 async function getForecastData(city) {
-  const apiUrl =
-    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+
+  const apiUrl = `http://localhost:5000/forecast/${city}`;
 
   const response = await fetch(apiUrl);
 
