@@ -1,7 +1,7 @@
 from database import get_connection
 from flask import request
 
-from app import app
+from server import app
 
 @app.route("/search", methods=["POST"])
 def save_search():
