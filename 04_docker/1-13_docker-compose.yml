@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ../02_source_code/frontend:/usr/share/nginx/html:ro
+      - ../02_source_code/frontend/www/public:/usr/share/nginx/html:ro
     depends_on:
       - database
 
