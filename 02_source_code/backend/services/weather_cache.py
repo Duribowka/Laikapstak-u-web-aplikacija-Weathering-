@@ -9,6 +9,8 @@ from datetime import UTC
 import requests
 import json
 
+CACHE_DURATION = timedelta(minutes=30)
+
 def get_weather(city):
     connection = get_connection()
     cursor = connection.cursor()
@@ -29,7 +31,7 @@ def get_weather(city):
         weather_json = row[0]
         updated_at = row[1]
 
-        if datetime.now(UTC).replace(tzinfo=None) - updated_at < timedelta(seconds=30):
+        if datetime.now(UTC).replace(tzinfo=None) - updated_at < CACHE_DURATION:
 
             print("CACHE HIT")
 
@@ -93,7 +95,7 @@ def get_forecast(city):
         forecast_json = row[0]
         updated_at = row[1]
 
-        if datetime.now(UTC).replace(tzinfo=None) - updated_at < timedelta(seconds=30):
+        if datetime.now(UTC).replace(tzinfo=None) - updated_at < CACHE_DURATION:
 
             print("FORECAST CACHE HIT")
 
