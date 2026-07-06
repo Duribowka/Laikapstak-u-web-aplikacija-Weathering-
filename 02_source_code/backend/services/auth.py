@@ -59,7 +59,7 @@ def signin(username, password):
     if row is None:
         return{
             "success": False,
-            "message": "User does not exist.."
+            "message": "Logging failed, wrong username or password.."
         }
     
     password_hash = row[0]
