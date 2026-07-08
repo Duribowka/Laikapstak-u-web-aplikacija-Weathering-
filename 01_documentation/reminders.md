@@ -1,1 +1,0 @@
-github actions, pipeline, common vulnerability executions, stress tests
