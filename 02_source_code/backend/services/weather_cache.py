@@ -1,4 +1,4 @@
-API_KEY = "211c8ca44c06752de485af185bd8adad"
+from conf import API_KEY
 
 from database import get_connection
 
@@ -9,7 +9,7 @@ from datetime import UTC
 import requests
 import json
 
-CACHE_DURATION = timedelta(minutes=30)
+CACHE_DURATION = timedelta(minutes=15)
 
 def get_weather(city):
     connection = get_connection()

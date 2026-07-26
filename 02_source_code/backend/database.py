@@ -1,11 +1,20 @@
 import psycopg2
 
+from conf import (
+    DB_HOST,
+    DB_PORT,
+    DB_NAME,
+    DB_USER,
+    DB_PASSWORD
+)
+
+
 def get_connection():
 
     return psycopg2.connect(
-        host="127.0.0.1",
-        port="5432",
-        database="practice_project",
-        user="student",
-        password="student_password"
+        host=DB_HOST,
+        port=DB_PORT,
+        database=DB_NAME,
+        user=DB_USER,
+        password=DB_PASSWORD
     )

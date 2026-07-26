@@ -73,3 +73,27 @@ Expected: Account creation rejected
 Actual: Application rejects to create account
 Status: ✅Passed
 Screenshot reference: /Test_Screenshots/FTC-07.png
+
+Test: Invalid data rejected
+ID: FTC-08
+Feature: User sign in
+Preconditions: none
+Test steps:
+    1) Enter wrong username/password.
+    2) Click Sign In.
+Expected: Log in rejected.
+Actual: Application rejects to log in user.
+Status: ✅Passed
+Screenshot reference: /Test_Screenshots/FTC-08.png
+
+Test: Search works
+ID: FTC-09
+Feature: Weather search
+Preconditions: none
+Test steps:
+    1) Search for valid city.
+Expected: Weather loads.
+Actual: Application successfully loads weather based on searched city.
+Status: ✅Passed
+Screenshot reference: /Test_Screenshots/FTC-09.png
+                      /Test_Screenshots/FTC-09_2.png
