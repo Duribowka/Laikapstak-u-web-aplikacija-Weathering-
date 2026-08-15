@@ -2,7 +2,7 @@
 .button,
 .hyperlink,
 .sign {
-    font-family: "Comic Mono", monospace;
+    font-family: monospace;
     font-weight: bold;
 }
 
@@ -150,4 +150,8 @@
     background-color: white;
 
     cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
